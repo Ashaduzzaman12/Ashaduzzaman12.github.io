@@ -706,7 +706,7 @@ addEventListener('scroll',()=>{prog.style.width=(scrollY/Math.max(1,document.doc
 })();
 
 // stats strip (edit the numbers here)
-DATA.stats=[{n:DATA.projects.length,label:"Projects built"},{n:1200,suf:"+",label:"Problems solved"},{n:3.71,dec:2,label:"CGPA out of 4.00"},{n:30,suf:"th",label:"AI-FICATION, nationwide"}];
+DATA.stats=[{n:DATA.projects.length,label:"Projects built"},{n:1200,suf:"+",label:"Problems solved"},{n:30,suf:"th",label:"AI-FICATION, nationwide"}];
 const statsEl=document.getElementById('stats');
 DATA.stats.forEach(x=>{const d=document.createElement('div'); d.className='stat'; d.dataset.n=x.n; d.dataset.dec=x.dec||0; d.dataset.suf=x.suf||''; d.innerHTML=`<b>0${x.suf||''}</b><span>${x.label}</span>`; statsEl.appendChild(d);});
 function countUp(el){
