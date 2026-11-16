@@ -391,7 +391,7 @@ const DATA = {
       problem:"People need fast, reliable answers to healthcare questions without always reaching a doctor.",
       why:"Built a medical chatbot using Retrieval-Augmented Generation to answer healthcare-related queries.",
       architecture:"RAG pipeline connecting a medical knowledge base to an LLM for grounded answers.",
-      result:"[]",
+      result:"",
       stack:["Python","RAG","LLM"],
       github:"https://github.com/Ashaduzzaman12", demo:"https://medchatabot.streamlit.app/"
     },
@@ -706,7 +706,7 @@ addEventListener('scroll',()=>{prog.style.width=(scrollY/Math.max(1,document.doc
 })();
 
 // stats strip (edit the numbers here)
-DATA.stats=[{n:DATA.projects.length,label:"Projects built"},{n:1200,suf:"+",label:"Problems solved"},{n:30,suf:"th",label:"AI-FICATION, nationwide"}];
+DATA.stats=[{n:11,suf:"+",label:"Projects built"},{n:1200,suf:"+",label:"Problems solved"},{n:30,suf:"th",label:"AI-FICATION, nationwide"}];
 const statsEl=document.getElementById('stats');
 DATA.stats.forEach(x=>{const d=document.createElement('div'); d.className='stat'; d.dataset.n=x.n; d.dataset.dec=x.dec||0; d.dataset.suf=x.suf||''; d.innerHTML=`<b>0${x.suf||''}</b><span>${x.label}</span>`; statsEl.appendChild(d);});
 function countUp(el){
